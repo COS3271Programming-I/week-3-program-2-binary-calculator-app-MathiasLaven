@@ -1,0 +1,31 @@
+package my_project;
+import java.util.Scanner;
+
+public class MyClass {
+	static Scanner userinput = new Scanner(System.in);
+	public static void main(String[] args) {
+		System.out.println("Please provide two binary numbers to do calculations on. \nThese numbers must be between 0000000000000000 and 1111111111111111.");
+		System.out.println("");
+		
+		System.out.print("Enter your first binary number: \n>>");
+		String binaryX = userinput.nextLine();
+		Integer x = Integer.parseInt(binaryX,2);
+		System.out.print("Enter your second binary number: \n>>");
+		String binaryY = userinput.nextLine();
+		Integer y = Integer.parseInt(binaryY,2);
+		
+		//turned into variables for easy debugging
+		String addResult = Integer.toBinaryString(x + y);
+		String subResult = Integer.toBinaryString(x - y);
+		String multResult = Integer.toBinaryString(x * y);
+		String divQuotient = Integer.toBinaryString(x / y);
+		
+		System.out.println("");
+
+		System.out.format("x + y = %s \n", addResult);
+		System.out.format("x - y = %s \n", subResult);
+		System.out.format("x * y = %s \n", multResult);
+		System.out.format("x / y = %s \n", divQuotient);
+		
+	}
+}

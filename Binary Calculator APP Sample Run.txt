@@ -1,0 +1,12 @@
+Please provide two binary numbers to do calculations on. 
+These numbers must be between 0000000000000000 and 1111111111111111.
+
+Enter your first binary number: 
+>>101
+Enter your second binary number: 
+>>11
+
+x + y = 1000 
+x - y = 10 
+x * y = 1111 
+x / y = 1 
